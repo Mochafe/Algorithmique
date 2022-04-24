@@ -50,3 +50,5 @@ Début
 		Ecrire "Non imposable"
 	finsi
 fin
+
+Exercice 4.6
