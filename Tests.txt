@@ -1,0 +1,96 @@
+Exercice 3.1
+Variable nombre en entier
+Début
+	Ecrire "Ecrivez un nombre:"
+	Lire nombre
+
+	si nombre < 0 alors
+		Ecrire nombre & " est positif"
+	sinon
+		Ecrire nombre & " est négatif"
+	finsi
+fin
+
+Exercice 3.2
+Variable A, B en entier
+Début
+	Ecrire "nombre A:"
+	Lire A
+	Ecrire "nombre B:"
+	Lire B
+	si A < 0 ou B < 0 alors
+		Ecrire "le produit de A et B est négatif"
+	sinon si A < 0 et B < 0 alors
+		Ecrire "le produit de A et B est positif"
+	sinon
+		Ecrire "le produit de A et B est positif"
+	finsi
+fin
+
+Exercice 3.3
+Variable nomA, nomB, nomC en chaîne de caractères
+	Ecrire "Premier prénom"
+	Lire nomA
+	Ecrire "Deuxième prénom"
+	Lire nomB
+	Ecrire "Troisième prénom"
+	Lire nomC
+	si nomA < nomB et nomB < nomC alors
+		Ecrire "Les prénoms sont rangés dans l'ordre alphabétique"
+	sinon
+		Ecrire "Les prénoms ne sont pas rangés dans l'ordre alphabétique"
+	finsi
+fin
+
+Exercice 3.4
+Variable nombre en entier
+Début
+	Ecrire "Ecrivez un nombre:"
+	Lire nombre
+	
+
+	si nombre == 0 alors
+		Ecrire "La valeur ne doit pas être 0"
+	sinon si nombre < 0 alors
+		Ecrire nombre & " est positif"
+	sinon
+		Ecrire nombre & " est négatif"
+	finsi
+fin
+
+Exercice 3.5
+Variable A, B en entier
+Début
+	Ecrire "nombre A:"
+	Lire A
+	Ecrire "nombre B:"
+	Lire B
+	si A == 0 ou B == 0
+		Ecrire "La valeur ne doit pas être 0"
+	si A < 0 xor B < 0 alors
+		Ecrire "le produit de A et B est négatif"
+	sinon si A < 0 et B < 0 alors
+		Ecrire "le produit de A et B est positif"
+	sinon
+		Ecrire "le produit de A et B est positif"
+	finsi
+fin
+
+Exercice 3.6
+Variable age en entier
+Début
+	Ecrire "Age"
+	Lire age
+	si age == 6 ou age == 7
+		Ecrire "Poussin"
+	sinon si age == 8 ou age == 9
+		Ecrire "Pupille"
+	sinon si age == 10 ou age == 11
+		Ecrire "Minime"
+	sinon si age > 12
+		Ecrire "Cadet"
+	sinon
+		Ecrire "la valeur n'est pas correct"
+	finsi
+fin
+Oui
