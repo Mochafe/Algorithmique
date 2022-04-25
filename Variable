@@ -1,0 +1,35 @@
+Exercice 1.1
+A=3, B=4
+Exercice 1.2
+A=2, B=3, C=1
+Exercice 1.3
+A=6, B=2
+Exercice 1.4 
+A=13, B=13, C=13
+Exercice 1.5
+A=2, B=2
+Les deux dernières instructions ne permet pas d'échanger les deux valeurs de B et A et si l'on inverse les deux dernières instruction cela ne réglera pas le problème car sa va juste inversé A et B donc tous sera égale a 5
+Exercice 1.6
+Variables A, B, C en Numériques
+A <- varA
+B <- varB
+C <- A
+A <- B
+B <- C
+Exercice 1.7
+Variables A, B, C, D, E en Numériques
+A <- varA
+B <- varB
+C <- varB
+
+D <- A
+E <- B
+
+A <- C
+C <- E
+B <- D
+
+Exercice 1.8
+Erreur
+Exercice 1.9
+"42312" une concaténation
