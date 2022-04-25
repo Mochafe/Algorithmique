@@ -57,25 +57,20 @@ début
 	Ecrire "Nombre:"
 	Lire A
 	
-	tantque B <- 1 a A
+	pour B <- 1 a A
 		C <- C + B
-	tantquefin
+	B suivant
 	
 	Ecrire C
 	
 Exercice 5.6 
 
-variables A, B, C en entier
+variables A en entier
 début
-	C <- 1
 	Ecrire "Nombre:"
 	Lire A
 	
-	tantque B <- 1 a A
-		C <- C * B
-	tantquefin
-	
-	Ecrire C
+	Ecrire A !
 fin
 
 Exercice 5.7
@@ -83,17 +78,70 @@ variables A, B, C, D en entier
 début
 	B <- 0
 	
-	tantque D <- 1 a 20
+	pour D <- 1 a 20
 		Ecrire "nombre numéro " & D & " : "
 		Lire A
 		si A > B alors
 			B <- A
 			C <- D
 		finsi
+	D suivant
+	
+	Ecrire "Le plus grand de ces nombres est : " & B
+	Ecrire "C'était le nombre numéro " & C
+fin
+
+Exercice 5.8
+
+variables A, B, C, D en entier
+début
+	C <- 0
+	B <- 0
+	A <- 1
+	
+	tantque A != 0
+		C <- C + 1
+		Ecrire "nombre numéro " & C & " : "
+		Lire A
+		si A > B alors
+			B <- A
+		finsi
 	tantquefin
 	
 	Ecrire "Le plus grand de ces nombres est : " & B
 	Ecrire "C'était le nombre numéro " & C
 fin
+
+Exercice 5.9
+variable input, sum, v en entier
+début
+	sum <- 0
+	input <- 1;
+	tantque input != 0
+		Ecrire "Ajouter un prix (0 pour terminer):"
+		Lire input
+		sum <- sum + input
+	fintantque
+	
+	Ecrire "Vous devez " & sum & "€"
+	Lire v
+	
+	v <- v - sum
+	
+	tantque v != 0
+		si v >= 10 alors
+			Ecrire "10 Euros"
+			v <- v - 10
+		sinon si v >= 5 && v < 10 alors
+			Ecrire "5 Euros"
+			v <- v - 5
+		sinon
+			Ecrire "1 Euros"
+			v <- v - 1
+		finsi
+	fintantque
+fin
+
+Exercice 5.10
 
 
