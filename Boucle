@@ -1,0 +1,99 @@
+Exercice 5.1
+Variable entree en entier
+début
+	entre <- 0
+	tantque entree < 1 || entree > 3
+		Ecrire "Ecrivez un nombre entre 1 et 3:"
+		Lire entree
+	fintantque
+fin
+
+Exercice 5.2
+variable A en entier
+début
+	A <- 0
+	Ecrire "Ecrivez un nombre entre 10 et 20:"
+	
+	tantque A < 10 || A > 20
+		Lire A
+		
+		si A < 10 alors
+			Ecrire "Trop petit"
+		finsi
+		si A > 20 alors
+			Ecrire "Trop grand"
+		finsi
+	tantquefin	
+fin
+
+Exercice 5.3
+variable A, compteur en entier
+début
+	Ecrire "Nombre:"
+	Lire A
+	compteur <- A + 10
+	
+	tantque A != compteur
+		Ecrire A
+		A <- A + 1
+	tantquefin 
+fin
+
+Exercice 5.4
+Variable A, B en entier
+début
+	Ecrire "nombre:"
+	Lire A
+	
+	pour B <- 1 a 10
+		Ecrire A & " * " & B & " = " & (A * B)
+	B suivant
+fin
+
+Exercice 5.5
+variables A, B, C en entier
+début
+	C <- 0
+	Ecrire "Nombre:"
+	Lire A
+	
+	tantque B <- 1 a A
+		C <- C + B
+	tantquefin
+	
+	Ecrire C
+	
+Exercice 5.6 
+
+variables A, B, C en entier
+début
+	C <- 1
+	Ecrire "Nombre:"
+	Lire A
+	
+	tantque B <- 1 a A
+		C <- C * B
+	tantquefin
+	
+	Ecrire C
+fin
+
+Exercice 5.7
+variables A, B, C, D en entier
+début
+	B <- 0
+	
+	tantque D <- 1 a 20
+		Ecrire "nombre numéro " & D & " : "
+		Lire A
+		si A > B alors
+			B <- A
+			C <- D
+		finsi
+	tantquefin
+	
+	Ecrire "Le plus grand de ces nombres est : " & B
+	Ecrire "C'était le nombre numéro " & C
+fin
+
+
