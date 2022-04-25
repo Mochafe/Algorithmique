@@ -3,13 +3,17 @@ Exercice 2.1
 462
 Exercice 2.2
 Variables Nombre en Numériques
-Lire Nombre "Ecrivez un nombre:"
+Ecrire "Ecrivez un nombre:"
+Lire Nombre
 Ecrire nombre^2
 Exercice 2.3
 Variable prixHT, nbArticle, TVA en Numériques
-Lire prixHT "Prix hors taxe:"
-Lire nbArticle "Nombre d'articles:"
-Lire TVA "Taux de la TVA(en %):"
+Ecrire "Prix hors taxe:"
+Lire prixHT
+Ecrire "Nombre d'articles:"
+Lire nbArticle
+Ecrire "Taux de la TVA(en %):"
+Lire TVA
 Ecrire (prixHT * ((TVA / 100) + 1)) * nbArticle
 Exercice 2.4
 Variables str1, str2, str3 en chaîne de caractères
@@ -19,4 +23,4 @@ str3 <- " me font mourir d'amour "
 Ecrire str1 & str2 & str3
 Ecrire str2 & str3 & str1
 Ecrire str2 & str1 & str3
-ecrire str1 & str3 & str1
+Ecrire str1 & str3 & str1

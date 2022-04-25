@@ -1,5 +1,11 @@
 Exercice 4.1
-
+si tutu > toto + 4 alors
+	tutu <- tutu+1
+sinon si tata == "OK"
+	tutu <- tutu + 1
+sinon
+	tutu <- tutu -1
+finsi
 Exercice 4.2
 Variable heure, minute en entier
 Début
@@ -52,3 +58,111 @@ Début
 fin
 
 Exercice 4.6
+Variables scoreA, scoreB, scoreC, scoreD en numérique
+début
+	Ecrire "Premier Candidat:"
+	Lire scoreA
+	Ecrire "Deuxième Candidat:"
+	Lire scoreB
+	Ecrire "troisième Candidat:"
+	Lire scoreC
+	Ecrire "Quatrième Candidat:"
+	Lire scoreD
+	
+	si scoreA >= 12.5 alors
+		si score >= 50
+			Ecrire "Elu"
+		sinon
+			si scoreA > scoreB && scoreA > scoreC && scoreA > scoreD alors
+				Ecrire "ballotage favorable"
+			sinon
+				Ecrire "Défavorable"
+			finsi
+		finsi
+	sinon
+		Ecrire "Battu"
+	finsi
+fin
+
+Exercice 4.7
+Variables age, permis, assurance, accident en entier
+début
+	Ecrire "Assurer chez la compagnie depuis combient de temps(en mois):"
+	Lire assurance
+	
+	si assurance > 12 alors
+		Ecrire "Tarifs bleu"
+	sinon
+		Ecrire "Age:"
+		Lire age
+		Ecrire "Titulaire du permis depuis combient de temps(en mois):"
+		Lire permis
+		Ecrire "Nombre d'accident:"
+		Lire accident
+		
+		si age 25 < && permis < 24 alors
+			si accident == 0 alors
+				Ecrire "Tarif rouge"
+			sinon
+				Ecrire "Refus"
+			finsi
+		finsi
+		si age < 25 && permis > 24 || age > 25 && permis < 24 alors
+			si accident == 0 alors
+				Ecrire "Tarif orange"
+			sinon si accident == 1 alors
+				Ecrire "Tarif rouge"
+			sinon
+				Ecrire "Refus"
+			finsi
+		finsi
+		si age > 25 && permis > 24 alors
+			si accident == 0 alors
+				Ecrire "Tarif Vert"
+			sinon si accident == 1 alors
+				Ecrire "Tarif orange"
+			sinon si accident == 2 alors
+				Ecrire "Tarif rouge"
+			sinon
+				Ecrire "Refus"
+			finsi
+		finsi
+	finsi	
+fin
+
+Exercice 4.8
+Variable jour, mois , an en entier
+début
+	Ecrire "Jour:"
+	Lire jour
+	Ecrire "Mois:
+	Lire mois
+	Ecire "Année:"
+	lire an
+	
+	si mois >= 1 && mois <= 12 alors
+		si mois % 1 == 0 alors
+				si mois == 2 alors
+					si an % 4 == 0 alors
+						si jour >= 1 && jour <= 29 alors
+							Ecrire "Date Valide"
+						sinon
+							Ecrire "Date invalide"
+						finsi
+		
+						si jour >= 1 && jour <= 30 alors
+							Ecrire "Date valide"
+						sinon
+							Ecrire "Date invalide"
+						finsi
+		sinon
+			si jour >= 0 && jour <= 31 alors
+				Ecrire "Date valide"
+			sinon
+				Ecrire "Date invalide"	
+			finsi
+		finsi			
+	sinon
+		Ecrire "Date invalide"
+	finsi
+fin
